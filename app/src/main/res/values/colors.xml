@@ -95,10 +95,7 @@
     <color name="yellow9">#f2a500</color>
 
 
-    <color name="pink">#ad64ff</color>
-
     <color name="brown1">#5a2502</color>
-
 
     <color name="red1">#80a41b00</color>
     <color name="red2">#eb3f6f</color>
@@ -111,11 +108,6 @@
     <color name="red9">#B64E4E</color>
     <color name="red10">#8ac39090</color>
 
-    <color name="transaprent_1">#00ffffff</color>
-    <color name="transaprent_2">#a900b2ff</color>
-    <color name="transaprent_3">#92000000</color>
-    <color name="transparent_background">#CC000000</color>
-
     <color name="orange1">#ff9600</color>
     <color name="orange2">#ff8400</color>
     <color name="orange3">#ffc106</color>
@@ -123,94 +115,9 @@
     <color name="orange5">#ffa200</color>
     <color name="orange6">#f39800</color>
 
-    <color name="gold_01">#fff7e7</color>
-    <color name="gold_02">#79542e</color>
-    <color name="gold_03">#D39F46</color>
-    <color name="gold_04">#9a764c</color>
-    <color name="gold_05">#b19363</color>
-    <color name="gold_06">#a6966e</color>
-    <color name="gold_07">#F3CC7E</color>
-    <color name="gold_08">#b19763</color>
-    <color name="gold_09">#b4a992</color>
-    <color name="gold_10">#d8cfbe</color>
-    <color name="gold_11">#fbe4d2</color>
-    <color name="gold_12">#9f927d</color>
-    <color name="gold_13">#d1b181</color>
-    <color name="gold_14">#91764b</color>
-    <color name="gold_15">#ffae00</color>
-    <color name="gold_16">#c7c3bb</color>
-    <color name="gold_17">#856241</color>
-    <color name="gold_18">#cfa972</color>
-    <color name="gold_19">#c5a76c</color>
-    <color name="gold_9c793f">#9c793f</color>
-    <color name="gold_926e34">#926e34</color>
 
 
-    <color name="brown_01">#baa88f</color>
-    <color name="brown_02">#8f7b5d</color>
-    <!--    <color name="gold_11">#9f927d</color>
-        <color name="gold_12">#9e917d</color>-->
 
-    <color name="pink_01">#eae6db</color>
-
-    <color name="tab_unselected_gray">#c0c0c0</color>
-    <color name="tab_selected_blue">#00235b</color>
-    <color name="tab_inde_orange">#fbb100</color>
-    <color name="tab_divi_gray">#c7c7c7</color>
-
-
-    <color name="blue_for_subtotal">#b3c6ff</color>
-    <color name="blue_for_sub">#e1f1fa</color>
-    <color name="blue_for_money_expand_bg">#cadfef</color>
-    <color name="gray_for_sub_total">#999999</color>
-    <color name="green_for_sub_item">#067b00</color>
-    <color name="red_for_sub_item">#ff0000</color>
-    <color name="login_rememberid_color">#002957</color>
-
-    <color name="bg_gray_color">#D7E1E6</color>
-    <color name="bg_yello_color">#E7E2D6</color>
-    <color name="nagivation_bg_color">#e5ebef</color>
-
-    <color name="login_button_dark_gray">#a1a8b4</color>
-    <color name="login_button_stroke_dark_gray">#a0a0a0</color>
-    <color name="login_language_spinner_strock_color">#666666</color>
-    <color name="login_button_dark_golden">#846240</color>
-    <color name="login_button_light_golden">#ffd884</color>
-    <color name="login_button_stroke_dark_golden">#81511c</color>
-    <color name="login_button_registertext">#484848</color>
-    <color name="login_edittext_stroke">#dadada</color>
-    <!-- cs page color set-->
-    <color name="cs_tg_start_color_light_blue">#c46b6c</color>
-    <color name="cs_tg_end_color_dark_blue">#bb3030</color>
-    <color name="cs_tg_text_color">#fea5a5</color>
-
-    <color name="cs_qq_start_color_light_yellow">#75acc0</color>
-    <color name="cs_qq_end_color_dark_yellow">#2669b4</color>
-    <color name="cs_qq_text_color">#a5eefe</color>
-
-    <color name="cs_wc_start_color_light_green">#76d140</color>
-    <color name="cs_wc_end_color_dark_green">#4e9b20</color>
-    <color name="cs_wc_text_color">#8fff4c</color>
-
-
-    <color name="register_blue">#34B2E8</color>
-    <color name="register_gray">#C4C4C4</color>
-
-    <color name="loginpage_login_dark_golden">#896643</color>
-    <color name="loginpage_login_light_golden">#fdd683</color>
-
-    <color name="form_light_blue">#edf7ff</color>
-
-    <color name="chat_slider_menu_bg">#801c2831</color>
-
-    <color name="money_subtitle_dark_blue">#0c3a77</color>
-    <color name="money_subtitle_light_blue">#0082c0</color>
-    <color name="money_total_bg_gray">#c7d5dc</color>
-    <color name="money_total_strock_gray">#c9c9c9</color>
-    <color name="money_total_text_gray">#787878</color>
-    <color name="money_number_count_gray">#eeeeee</color>
-    <color name="money_sum_green">#0c7c00</color>
-    <color name="money_di_line">#8a8a8a</color>
 
 
 </resources>

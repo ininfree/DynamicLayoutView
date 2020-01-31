@@ -3,7 +3,6 @@ package com.example.myapplication
 import android.graphics.Color
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -43,7 +42,6 @@ class CreateViewFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.e("CreateViewFragment","onCreateView")
         val view = inflater.inflate(R.layout.create_view_fragment, container, false)
         initValue()
         createLayoutView(view)
@@ -124,7 +122,7 @@ class CreateViewFragment : Fragment() {
 
     private fun setHeight(index: Int) {
         heightIndex = index
-        var indexColumn = index / row
+        val indexColumn = index / row
         val indexRow = index % row
         val heightColumnView = (view as ViewGroup).getChildAt(indexColumn) as ViewGroup
         heightColumnView.setBackgroundColor(ContextCompat.getColor(context!!, R.color.colorAccent))
@@ -135,7 +133,7 @@ class CreateViewFragment : Fragment() {
     }
 
     private fun clearHeight() {
-        var indexColumn = heightIndex / row
+        val indexColumn = heightIndex / row
         val indexRow = heightIndex % row
         val heightColumnView = (view as ViewGroup).getChildAt(indexColumn)
         heightColumnView.setBackgroundColor(0)

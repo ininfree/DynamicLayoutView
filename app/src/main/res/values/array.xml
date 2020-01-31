@@ -6,11 +6,12 @@
         <item>@color/gray19</item>
         <item>@color/blue3</item>
         <item>@color/orange</item>
+        <item>@color/colorPrimary</item>
         <item>@color/red3</item>
         <item>@color/yellow9</item>
         <item>@color/blue21</item>
         <item>@color/green3</item>
-        <item>@color/gold_02</item>
+        <item>@color/colorPrimary</item>
         <item>@color/orange4</item>
         <item>@color/blue3</item>
     </array>
