@@ -11,6 +11,10 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import org.koin.android.viewmodel.ext.android.viewModel
 import java.util.*
 
@@ -36,7 +40,6 @@ class CreateViewFragment : Fragment() {
     private var column = 1
     private var heightIndex = 0
     private var totalCount = 0
-    private lateinit var timer: Timer
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,13 +55,6 @@ class CreateViewFragment : Fragment() {
         //setHeight(4 % totalCount)
         startTimer()
         super.onViewCreated(view, savedInstanceState)
-    }
-
-    override fun onDestroyView() {
-        timer?.let {
-            it.cancel()
-        }
-        super.onDestroyView()
     }
 
     private fun initValue() {
@@ -145,21 +141,26 @@ class CreateViewFragment : Fragment() {
 
 
     private fun startTimer() {
-        timer = Timer()
-        timer.scheduleAtFixedRate(
-            object : TimerTask() {
-                override fun run() {
-                    activity?.runOnUiThread {
-                        clearHeight()
-                        setHeight(RandomNumber())
-                    }
-                }
-            },
-            0, 10000
-        )
+        startCoroutineTimer(0, 10000) {
+            clearHeight()
+            setHeight(RandomNumber())
+        }
     }
 
     private fun RandomNumber(): Int {
         return (0..(totalCount - 1)).random()
     }
+
+    fun startCoroutineTimer(delayMillis: Long = 0, repeatMillis: Long = 0, action: () -> Unit) =
+        GlobalScope.launch(Dispatchers.Main) {
+            delay(delayMillis)
+            if (repeatMillis > 0) {
+                while (true) {
+                    action()
+                    delay(repeatMillis)
+                }
+            } else {
+                action()
+            }
+        }
 }
