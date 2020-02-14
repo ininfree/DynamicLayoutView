@@ -11,10 +11,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 import org.koin.android.viewmodel.ext.android.viewModel
 import java.util.*
 
@@ -55,6 +52,11 @@ class CreateViewFragment : Fragment() {
         //setHeight(4 % totalCount)
         startTimer()
         super.onViewCreated(view, savedInstanceState)
+    }
+
+    override fun onDestroyView() {
+        GlobalScope.cancel()
+        super.onDestroyView()
     }
 
     private fun initValue() {
